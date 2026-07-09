@@ -3,12 +3,11 @@ name: Deploy website
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   test:
     runs-on: ubuntu-latest
-
     steps:
       - name: Get code
         uses: actions/checkout@v3
